@@ -42,7 +42,7 @@ public class PositiveAffirmationsActivity : Activity
    {
       Console.WriteLine(@"Which one would you like to do today?
       1. List my own affirmations
-      2. Help me with some affirmations");
+      2. Help me with affirmations");
       Console.Write("Select an option: ");
 
       string userInput = Console.ReadLine();
