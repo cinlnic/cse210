@@ -1,4 +1,0 @@
-140
-SimpleGoal:Simple,simple,20,True
-EternalGoal:Eternal,(eternal),25
-ChecklistGoal:Checklist,checklist,10,100,2,2
