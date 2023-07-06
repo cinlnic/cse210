@@ -11,11 +11,8 @@ public class LectureEvent : Event
 
    }
 
-   public void FullDetails()
+   public string FullDetails()
    {
-      StandardDetails();
-      Console.WriteLine($"{GetEventType()}");
-      Console.WriteLine($"{_speaker}");
-      Console.WriteLine($"Capacity: {_capacity}");
+      return $"{StandardDetails()}\n{GetEventType()}\n{_speaker}\nCapacity: {_capacity}";
    }
 }

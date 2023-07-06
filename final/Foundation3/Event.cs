@@ -31,19 +31,14 @@ public class Event
       return _address;
    }
 
-   public void StandardDetails()
+   public string StandardDetails()
    {
-      Console.WriteLine($"{_title}");
-      Console.WriteLine($"{_description}");
-      Console.WriteLine($"{_date}");
-      Console.WriteLine($"{_time}");
-      Console.WriteLine(GetAddress().GetAddressString());
+      return $"{_title}\n{_description}\n{_date}\n{_time}\n{GetAddress().GetAddressString()}";
    }
 
-   public void ShortDescripton()
+   public string ShortDescripton()
    {
-      Console.WriteLine($"{_eventType}");
-      Console.WriteLine($"{_title}");
-      Console.WriteLine($"{_date}");
+      return $"{_eventType}\n{_title}\n{_date}";
+
    }
 }

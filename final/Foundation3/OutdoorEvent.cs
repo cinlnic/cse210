@@ -8,10 +8,8 @@ public class OutdoorEvent : Event
       _weather = weather;
    }
 
-   public void FullDetails()
+   public string FullDetails()
    {
-      StandardDetails();
-      Console.WriteLine($"{GetEventType()}");
-      Console.WriteLine($"Weather forecast: {_weather}");
+      return $"{StandardDetails()}\n{GetEventType()}\nWeather forecast: {_weather}";
    }
 }

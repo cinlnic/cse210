@@ -8,11 +8,8 @@ public class ReceptionEvent : Event
       _rsvpEmail = rsvpEmail;
    }
 
-   public void FullDetails()
+   public string FullDetails()
    {
-      StandardDetails();
-      Console.WriteLine($"{GetEventType()}");
-      Console.WriteLine($"RSVP to: {_rsvpEmail}");
-
+      return $"{StandardDetails()}\n{GetEventType()}\nRSVP to: {_rsvpEmail}";
    }
 }
