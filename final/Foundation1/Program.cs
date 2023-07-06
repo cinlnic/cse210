@@ -66,6 +66,7 @@ class Program
          Console.WriteLine($"\nTitle: {video.title}");
          Console.WriteLine($"Author: {video.author}");
          Console.WriteLine($"Length: {video.length} seconds");
+         Console.WriteLine($"Number of Comments: {video.NumberOfComments()}");
          Console.WriteLine("Comments:");
          DisplayComments(video.comments);
       }
